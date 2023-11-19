@@ -19,8 +19,8 @@ Create a Sanity.io Account: To get started, sign up for a Sanity.io account here
 Clone this repository to your local machine using the following command:
 
 ```bash
-git clone <repository-url>
-cd project-directory
+git clone https://github.com/saragam443/next-sanity-blog.git
+cd next-sanity-blog
 ```
 
 **Install Dependencies**
