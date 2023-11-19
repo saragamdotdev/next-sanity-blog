@@ -1,17 +1,16 @@
-import React from "react";
-import { getPosts, getTutorials } from "../../sanity/sanity-utils";
+import { getPosts } from "../../sanity/sanity-utils";
 import Link from "next/link";
 import Image from "next/image";
 
 const HomePosts = async () => {
-  const tutorials = await getPosts();
+  const posts = await getPosts();
 
   return (
     <div className="mb-16">
       <h2 className="text-3xl mt-0 mb-6 text-gray-50 font-bold">Posts</h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {tutorials.map((item) => (
+        {posts.map((item) => (
           <div key={item._id} className="border border-gray-600 p-2 rounded-md">
             <Image
               src={item.image}
